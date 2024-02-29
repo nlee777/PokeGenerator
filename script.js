@@ -1,5 +1,9 @@
 // Array of words for the random sentence
-const firstWords = ['Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 'Hemorrhoid', 'Bad Posture', 'Chill', 'Small Face'];
+const firstWords = [
+    'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
+    'Hemorrhoid', 'Bad Posture', 'Chill', 'Small Face', 'Little Boy',
+    'Slightly Racist', 
+];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
 
 // Function to get a random word from an array
