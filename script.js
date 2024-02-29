@@ -89,7 +89,7 @@ function displayRandomLevel() {
     document.body.appendChild(levelElement); // Append the level element to the body or another appropriate container
 }
 
-// Function to check if the current time is between 5:00 AM and 5:05 AM PST
+// Function to check if the current time is valid
 function goTime() {
     const now = new Date();
     const hours = now.getHours(); // Get the current hour
@@ -100,11 +100,11 @@ function goTime() {
     const pstHours = pstTime.getHours();
     const pstMinutes = pstTime.getMinutes();
     
-    // Check if the current time is exactly 5:06 AM PST
-    // return hours === 5 && minutes === 7;
-
+    // Check if the current time is exactly 12:12 AM or 12:12 PM PST
+    // return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
     return true;
 }
+
 
 
 // Call the appropriate function based on the time
@@ -113,6 +113,6 @@ window.onload = () => {
         displayRandomPokemon();
         displayRandomLevel();
     } else {
-        document.body.innerHTML = '<p>Come back later</p>';
+        document.body.innerHTML = '<p>Come back at 12:12</p>';
     }
 };
