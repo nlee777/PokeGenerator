@@ -2,7 +2,7 @@
 const firstWords = [
     'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
     'Hemorrhoid', 'Bad Posture', 'Small Face', 'Little Boy',
-    'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol', 'Thick Dick',
+    'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol',
     'Homophobic But Gay', 'Cant Read'
 ];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
