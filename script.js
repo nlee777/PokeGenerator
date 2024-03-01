@@ -1,15 +1,27 @@
 // Array of words for the random sentence
 const firstWords = [
     'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
-    'Hemorrhoid', 'Bad Posture', 'Chill', 'Small Face', 'Little Boy',
-    'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol'
+    'Hemorrhoid', 'Bad Posture', 'Small Face', 'Little Boy',
+    'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol', 'Thick Dick',
+    'Homophobic But Gay', 'Cant Read'
 ];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
+const type = ['Milf', 'Dilf'];
 
 // Function to get a random word from an array
 function getRandomWord(words) {
     return words[Math.floor(Math.random() * words.length)];
 }
+
+// Function to display the random type
+function displayRandomType() {
+    const randomType = getRandomWord(type);
+    const typeElement = document.createElement('p');
+    typeElement.textContent = `Type: ${randomType}`;
+    typeElement.id = 'type';
+    document.body.appendChild(typeElement); // Append the type element below the level paragraph
+}
+
 
 // Function to generate a random sentence
 function generateRandomSentence() {
@@ -75,6 +87,7 @@ async function displayRandomPokemon() {
         const randomSentence = generateRandomSentence();
         const randomSentenceElement = document.getElementById('randomSentence');
         randomSentenceElement.textContent = randomSentence;
+
     } catch (error) {
         console.error('Error displaying random Pokemon and sentence:', error);
     }
@@ -101,17 +114,40 @@ function goTime() {
     const pstMinutes = pstTime.getMinutes();
     
     // Check if the current time is exactly 12:12 AM or 12:12 PM PST
-    return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
+    // return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
+    return true
 }
-
-
 
 // Call the appropriate function based on the time
 window.onload = () => {
     if (goTime()) {
         displayRandomPokemon();
         displayRandomLevel();
+        displayRandomType();
+        // setInterval(toggleFontSize, 200);
     } else {
         document.body.innerHTML = '<p>Come back at 12:12</p>';
     }
 };
+
+// Function to toggle the font size of the random sentence
+// Function to toggle the font size of the random sentence
+function toggleFontSize() {
+    const randomSentenceElement = document.getElementById('randomSentence');
+    const currentFontSize = randomSentenceElement.style.fontSize;
+    randomSentenceElement.style.fontSize = currentFontSize === '5em' ? '4.9em' : '5em';
+}
+
+// Function to toggle the max-height of the image
+function toggleImageHeight() {
+    const pokemonImage = document.querySelector('#pokemonContainer img');
+    const currentMaxHeight = pokemonImage.style.maxHeight;
+    pokemonImage.style.maxHeight = currentMaxHeight === '350px' ? '345px' : '350px';
+}
+
+// Call the toggle functions every second
+setInterval(() => {
+    // toggleFontSize();
+    toggleImageHeight();
+}, 200);
+

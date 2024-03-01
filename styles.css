@@ -6,15 +6,26 @@ body, html {
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items at the start of the cross-axis */
-    height: auto; /* Adjusted height to fit content */
+    align-items: flex-start; /* Adjusted alignment */
+    height: 400px; /* Fixed height for the container */
+    overflow: hidden; /* Prevent overflow */
 }
 
 #pokemonContainer {
     max-width: 100%;
-    max-height: 80%; /* Adjusted height to leave space for the paragraph */
-    margin-bottom: -10px; /* Added margin to separate from the paragraph */
+    max-height: 100%;
 }
+
+#pokemonContainer img {
+    max-height: 100%;
+    width: auto;
+}
+
+#randomSentence {
+    text-align: center;
+    margin-top: -9vh; /* Adjusted margin */
+}
+
 
 h1 {
     font-family: "Kode Mono", monospace;
@@ -33,7 +44,7 @@ p {
     color: #EF2D2D;
 }
 
-#level {
+#level, #type {
     color: black;
     font-size: 2em;
 }
