@@ -117,10 +117,11 @@ function goTime() {
     
     // Check if the current time is exactly 12:12 AM or 12:12 PM PST
     return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
+    // return true
 }
 
 function selectRare() {
-    const choose_card = Math.floor(Math.random() * 8);
+    const choose_card = Math.floor(Math.random() * 3);
     console.log(choose_card);
     return choose_card;
 }
@@ -143,14 +144,14 @@ function displayLegendaryTing() {
 
     pokemonImage = document.createElement('img');
     pokemonImage.id = 'ting';
-    pokemonImage.src = 'ting.png';
+    pokemonImage.src = 'madeline.png';
     pokemonImage.alt = 'Legendary Ting';
     const pokemonContainer = document.getElementById('pokemonContainer');
     pokemonContainer.appendChild(pokemonImage);
 
 
     const typeElement = document.createElement('p');
-    typeElement.textContent = `LEGENDARY BIG BOOTY TING CARD`;
+    typeElement.textContent = `HAPPY BIRTHDAY MADELINE!!`;
     typeElement.id = 'ting_type';
     document.body.appendChild(typeElement); // Append the type element below the level paragraph
 }
