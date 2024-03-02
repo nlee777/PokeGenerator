@@ -3,7 +3,8 @@ const firstWords = [
     'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
     'Hemorrhoid', 'Bad Posture', 'Small Face', 'Little Boy',
     'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol',
-    'Homophobic But Gay', 'Cant Read'
+    'Homophobic But Gay', 'Cant Read', 'Lettuce Baby', 'No Bitches', 
+    'Crusty Knees'
 ];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
 const type = ['Milf', 'Dilf'];
@@ -29,7 +30,6 @@ function generateRandomSentence() {
 
     let secondWord = getRandomWord(secondWords);
     if (firstWord === 'Big Booty' && (secondWord === 'Rachel' || secondWord === 'Madeline' || secondWord === 'Kate')) {
-        // If the first word is 'Big Booty', reselect the second word if it's 'Rachel', 'Madeline', or 'Kate'
         do {
             secondWord = getRandomWord(secondWords);
         } while (secondWord === 'Rachel' || secondWord === 'Madeline' || secondWord === 'Kate');
@@ -102,6 +102,8 @@ function displayRandomLevel() {
     document.body.appendChild(levelElement); // Append the level element to the body or another appropriate container
 }
 
+var sample = document.getElementById("foobar");
+
 // Function to check if the current time is valid
 function goTime() {
     const now = new Date();
@@ -117,13 +119,55 @@ function goTime() {
     return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
 }
 
+function selectRare() {
+    const choose_card = Math.floor(Math.random() * 8);
+    console.log(choose_card);
+    return choose_card;
+}
+
+let pokemonImage;
+
+function rotateTing() {
+    setInterval(() => {
+        if (pokemonImage.classList.contains('rotate')) {
+            pokemonImage.classList.remove('rotate');
+        } else {
+            pokemonImage.classList.add('rotate');
+        }
+    }, 2000);
+}
+
+function displayLegendaryTing() {
+    rotateTing();
+    document.body.style.backgroundColor = 'black';
+
+    pokemonImage = document.createElement('img');
+    pokemonImage.id = 'ting';
+    pokemonImage.src = 'ting.png';
+    pokemonImage.alt = 'Legendary Ting';
+    const pokemonContainer = document.getElementById('pokemonContainer');
+    pokemonContainer.appendChild(pokemonImage);
+
+
+    const typeElement = document.createElement('p');
+    typeElement.textContent = `LEGENDARY BIG BOOTY TING CARD`;
+    typeElement.id = 'ting_type';
+    document.body.appendChild(typeElement); // Append the type element below the level paragraph
+}
+
 // Call the appropriate function based on the time
 window.onload = () => {
     if (goTime()) {
-        displayRandomPokemon();
-        displayRandomLevel();
-        displayRandomType();
-        // setInterval(toggleFontSize, 200);
+        const rareOrNot = selectRare();
+        if (rareOrNot != '1') {
+            displayRandomPokemon();
+            displayRandomLevel();
+            displayRandomType();
+        } else {
+            // right here
+            console.log('legendary ting');
+            displayLegendaryTing();
+        }
     } else {
         document.body.innerHTML = '<p>Come back at 12:12</p>';
     }

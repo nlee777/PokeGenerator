@@ -21,10 +21,24 @@ body, html {
     width: auto;
 }
 
+#ting {
+    border-radius: 90px;
+    border-style: solid;
+    border-color: gold;
+    border-width: 7px;
+    box-shadow: 50px;
+}
+
+#ting_type {
+    padding-top: 4vh;
+}
+
 #randomSentence {
     text-align: center;
     margin-top: -9vh; /* Adjusted margin */
 }
+
+#foobar { display: none }
 
 
 h1 {
@@ -54,4 +68,17 @@ img {
     max-width: 100%; /* Ensure the image doesn't exceed the container's width */
     height: auto; /* Maintain aspect ratio */
     max-height: 300px; /* Set a maximum height */
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* End rotation at 360 degrees */
+    }
+}
+
+.rotate {
+    animation: rotateAnimation 1s linear; /* Apply rotation animation */
 }
