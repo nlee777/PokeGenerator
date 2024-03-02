@@ -121,7 +121,7 @@ function goTime() {
 }
 
 function selectRare() {
-    const choose_card = Math.floor(Math.random() * 2);
+    const choose_card = Math.floor(Math.random() * 20);
     console.log(choose_card);
     return choose_card;
 }
@@ -144,14 +144,14 @@ function displayLegendaryTing() {
 
     pokemonImage = document.createElement('img');
     pokemonImage.id = 'ting';
-    pokemonImage.src = 'madeline.png';
+    pokemonImage.src = 'ting.png';
     pokemonImage.alt = 'Legendary Ting';
     const pokemonContainer = document.getElementById('pokemonContainer');
     pokemonContainer.appendChild(pokemonImage);
 
 
     const typeElement = document.createElement('p');
-    typeElement.textContent = `HAPPY BIRTHDAY MADELINE!!`;
+    typeElement.textContent = `LEGENDARY RARE BIG BOOTY TING!!`;
     typeElement.id = 'ting_type';
     document.body.appendChild(typeElement); // Append the type element below the level paragraph
 }
