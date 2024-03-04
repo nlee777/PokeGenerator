@@ -8,7 +8,8 @@ const firstWords = [
     'Crusty Knees', 'Chlamydia', 'Constipated', 'Massive Fucking Fart',
     'Illegeally Stinky', 'Powerful Booty', 'Nut Gobbling', 'Alt Right',
     'Orphan Hater', 'Animal Exploiting', 'Subtly Sexist', 'Climate Changing',
-    'Inclusive But Dissmissive of Disabilities'
+    'Inclusive But Dissmissive of Disabilities', 'Thick Dick', 'Serial Edger',
+    'Anal Sores', 'Breedable', 'Ayaan\'s father,', 'Ting Tickler'
 ];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
 const type = ['Milf', 'Dilf'];
