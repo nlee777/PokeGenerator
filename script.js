@@ -1,10 +1,14 @@
 // Array of words for the random sentence
+
+// 'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
+// 'Hemorrhoid', 'Bad Posture', 'Small Face', 'Little Boy',
+// 'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol',
 const firstWords = [
-    'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
-    'Hemorrhoid', 'Bad Posture', 'Small Face', 'Little Boy',
-    'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol',
     'Homophobic But Gay', 'Cant Read', 'Lettuce Baby', 'No Bitches', 
-    'Crusty Knees'
+    'Crusty Knees', 'Chlamydia', 'Constipated', 'Massive Fucking Fart',
+    'Illegeally Stinky', 'Powerful Booty', 'Nut Gobbling', 'Alt Right',
+    'Orphan Hater', 'Animal Exploiting', 'Subtly Sexist', 'Climate Changing',
+    'Inclusive But Dissmissive of Disabilities'
 ];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
 const type = ['Milf', 'Dilf'];
