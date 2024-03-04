@@ -120,8 +120,8 @@ function goTime() {
     const pstMinutes = pstTime.getMinutes();
     
     // Check if the current time is exactly 12:12 AM or 12:12 PM PST
-    // return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
-    return true
+    return (pstHours === 0 || pstHours === 12) && pstMinutes === 12;
+    // return true
 }
 
 function selectRare() {
