@@ -2,14 +2,16 @@
 
 // 'Lil', 'Big Booty', 'Yo Mama', 'Fucking', 'Confused', 'Brother', 
 // 'Hemorrhoid', 'Bad Posture', 'Small Face', 'Little Boy',
-// 'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol',
+// 'Slightly Racist', 'Zesty', 'Stressed Out', 'Smol', 'Alt Right',
+// 'Climate Changing', 'Homophobic But Gay', 'No Bitches', 'Crusty Knees'
+// 'Cant Read', 'Chlamydia', 'Ayaan\'s father,', 'Constipated'
 const firstWords = [
-    'Homophobic But Gay', 'Cant Read', 'Lettuce Baby', 'No Bitches', 
-    'Crusty Knees', 'Chlamydia', 'Constipated', 'Massive Fucking Fart',
-    'Illegeally Stinky', 'Powerful Booty', 'Nut Gobbling', 'Alt Right',
-    'Orphan Hater', 'Animal Exploiting', 'Subtly Sexist', 'Climate Changing',
+    'Lettuce Baby', 'Massive Fucking Fart',
+    'Illegeally Stinky', 'Powerful Booty', 'Nut Gobbling', 
+    'Orphan Hater', 'Animal Exploiting', 'Subtly Sexist', 
     'Inclusive But Dissmissive of Disabilities', 'Thick Dick', 'Serial Edger',
-    'Anal Sores', 'Breedable', 'Ayaan\'s father,', 'Ting Tickler', 'Got Skoool',
+    'Anal Sores', 'Breedable', 'Ting Tickler', 'Got Skoool',
+    'Seanis Penis Gobbler', 'Concoochie Smoochie', 'Booty Sniffer'
 ];
 const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting', 'Noor'];
 const type = ['Milf', 'Dilf'];
