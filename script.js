@@ -9,9 +9,9 @@ const firstWords = [
     'Illegeally Stinky', 'Powerful Booty', 'Nut Gobbling', 'Alt Right',
     'Orphan Hater', 'Animal Exploiting', 'Subtly Sexist', 'Climate Changing',
     'Inclusive But Dissmissive of Disabilities', 'Thick Dick', 'Serial Edger',
-    'Anal Sores', 'Breedable', 'Ayaan\'s father,', 'Ting Tickler'
+    'Anal Sores', 'Breedable', 'Ayaan\'s father,', 'Ting Tickler', 'Got Skoool',
 ];
-const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting'];
+const secondWords = ['Connor', 'Sean', 'Rachel', 'Madeline', 'Nathan', 'Kate', 'Ting', 'Noor'];
 const type = ['Milf', 'Dilf'];
 
 // Function to get a random word from an array
